@@ -5,5 +5,30 @@ venv/
 .env
 .ipynb_checkpoints/
 .DS_Store
-outputs/*.csv
+!outputs/predictions.csv
+!outputs/Analytics/
 !outputs/.gitkeep
+Analytics/
+
+# Model files & artifacts (90+ MB)
+models/
+experiments/
+results/
+checkpoints/
+*.pkl
+*.safetensors
+
+# Data files
+data/
+
+# Streamlit cache
+.streamlit/
+
+# Test cache
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+*.swp
