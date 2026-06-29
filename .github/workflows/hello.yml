@@ -1,0 +1,18 @@
+name: My First Workflow
+
+on:
+  push:                   # run this whenever you push code
+
+jobs:
+  say-hello:              # job name — you can call it anything
+    runs-on: ubuntu-latest # use GitHub's free Linux server
+
+    steps:
+      - name: Print a message
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Show the date
+        run: date
+
+      - name: List files in the repo
+        run: ls
